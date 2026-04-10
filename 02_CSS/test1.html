@@ -1,0 +1,155 @@
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        section{
+            width: 800px;
+            height: 305px;
+            background-color: white;
+            border: 5px solid red;
+            display: flex;
+
+            /*justify-content: center; */ /* x axis*/
+            /*justify-content: start;*/
+           /* justify-content: end;*/
+
+            /* align-items: center;*/  /*y axis*/
+
+            justify-content: space-evenly;
+            /*justify-content: space-around;*/
+
+            /*justify-content: space-between;*/
+
+
+        }
+
+        section > div{
+            width: 100px;
+            height: 100px;
+            background-color: deeppink;
+            border: 1px solid red;
+
+            /*align-self: start;*/
+            /*align-self: end;*/
+            /*align-self: center;*/
+            justify-content: space-evenly;
+            box-shadow: 0px 0px 20px 0px purple;
+        }
+        section > div:first-child {
+            align-self: start;
+        }
+        section > div:nth-child(2) {
+            align-self: center;
+        }
+        section > div:nth-child(3) {
+            align-self: end;
+        }
+        section > div:nth-child(4) {
+            align-self: center;
+        }
+        section > div:nth-child(5) {
+            align-self: start;
+        }
+        section > div:nth-child(6) {
+            align-self: center;
+        }
+
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+</section>
+
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Piano Keyboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+
+    body{
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        height:100vh;
+        background:#eee;
+    }
+
+    .piano{
+        position:relative;
+        display:flex;
+    }
+
+    .white{
+        width:80px;
+        height:300px;
+        border:1px solid #999;
+        background:white;
+        border-radius:6px;
+        transition: 0.1s;
+        cursor: pointer;
+    }
+    .white:active{
+        background: #ddd;
+        transform: translateY(2px);
+    }
+
+    .black{
+        position:absolute;
+        width:50px;
+        height:180px;
+        background:#333;
+        border-radius:5px;
+        top:0;
+        transition: 0.1s;
+        cursor: pointer;
+    }
+    .black:active{
+        background: #ddd;
+        transform: translateY(2px);
+    }
+
+    .b1{ left:60px; }
+    .b2{ left:140px; }
+    .b3{ left:300px; }
+    .b4{ left:380px; }
+    .b5{ left:460px; }
+</style>
+<body>
+
+<div class="piano">
+
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+    <div class="white"></div>
+
+    <div class="black b1"></div>
+    <div class="black b2"></div>
+    <div class="black b3"></div>
+    <div class="black b4"></div>
+    <div class="black b5"></div>
+
+</div>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let x = ["Mahindha", "Ranil", "Anura"];
+
+  //push()  - Adds one or more elements to the end of an array and returns the new length of the array.
+  x.push("Puthano"); // ['Mahindha', 'Ranil', 'Anura', "Puthano"]
+
+  //pop()  - Removes the last element from an array and returns that element.
+  x.pop(); // ['Mahindha', 'Ranil', 'Anura']
+
+  //shift()  - Removes the first element from an array
+  x.shift(); // ['Ranil', 'Anura']
+
+  //shift()  - Adds one or more elements to the beginning of an array
+  x.unshift("Gota"); // ['Gota', 'Ranil', 'Anura']
+  x.unshift("Namalbaby", "Yoshithababy"); // ['Namalbaby', 'Yoshithababy', 'Gota', 'Ranil', 'Anura']
+
+  // Joins two or more arrays and returns a new array.
+  var a = ["A", "B", "C"];
+  var b = ["D", "E", "F"];
+  var c = ["G", "H", "I"];
+
+  var result1 = a.concat(b);
+  console.log("Result1: ", result1);
+
+  var result2 = b.concat(a);
+  console.log("Result2: ", result2);
+
+  var result3 = a.concat(b, c);
+  console.log("Result3: ", result3);
+
+
+  var y = [10,20,30,40,50,60,70,80,90]
+  var r1 = y.splice(7);
+  console.log(r1);
+
+  let fruits = ["mango","Banana","Apple","pineapple"];
+  console.log(fruits.includes("Banana"));      //true
+  console.log(fruits.includes("Orange"));      //false
+
+
+  let j = [17,23,56,78,88,99,43,34,32,65];
+  let sorted_j = j.sort();
+  console.log(sorted_j);
+
+  // let j.sort = j.sort((a,b) =>b-a);
+  // console.log(sorted_j);
+
+  var join_result1 = v.join(",");
+  var join_result1 = v.join("*");
+
+  console.log(join_result1);
+  console.log(join_result2);
+</script>
+
+</body>
+</html>

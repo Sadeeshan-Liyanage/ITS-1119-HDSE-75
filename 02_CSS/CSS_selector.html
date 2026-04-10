@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Selector</title>
+
+  <style>
+    h3 {
+      color: darkblue;
+    }
+
+    #ijse{
+      color: black;
+      background-color : gray;
+    }
+    .my{
+      color: black;
+      background: darkgray;
+      font-style: italic;
+    }
+    *{
+      color: rebeccapurple;
+    }
+
+    [class]{
+      color: darkgreen;
+    }
+    [href$="8080"] {
+      background-color: lightskyblue;
+    }
+    [href^="http"] {
+          background-color: lightgreen;
+        }
+    [href*="code"] {
+      background-color: darkgray;
+    }
+    h1:hover {
+      color: red;
+      font-size: 50px;
+    }
+    h1:active{
+      color: greenyellow;
+    }
+
+    a:link {
+      color: green;
+    }
+    a:visited {
+      color: red;
+    }
+    /*li:first-child{*/
+    /*  color: green;*/
+    /*}*/
+    /*li:last-child{*/
+    /*  color: red;*/
+    /*}*/
+    /*li:nth-child(3){*/
+    /*  color: greenyellow;*/
+    /*}*/
+    /*li:nth-child(even){*/
+    /*  color: gold;*/
+    /*}*/
+    li:nth-child(4n){
+      color: lightskyblue;
+
+    }
+
+    h1::before{
+      content: "Welcome to ";
+      background-color: darkgray;
+    }
+    h1::after{
+      content: "Hello! ";
+      background-color: wheat;
+    }
+    p::first-letter{
+      font-size: 50px;
+    }
+    li::marker{
+      content: "🐬";
+    }
+    input::file-selector-button{
+      background-color: red;
+    }
+    input::placeholder{
+      color: blue;
+    }
+    p::selection{
+      background-color: indigo;
+      color: wheat;
+    }
+    selection > p{
+      color: red;
+    }
+    h1 + h2{
+      color:mediumpurple;
+    }
+    h1 ~ h2{
+      color:mediumaquamarine;
+    }
+
+
+  </style>
+</head>
+<body>
+  <h3>Hello World</h3>
+  <h1 id="ijse">Hello CSS</h1>
+  <h1 id="ijse1">Hello HTML</h1>
+  <h2 class="my">Hello</h2>
+  <em class="my1">Html</em>
+  <br>
+  <p1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi dolore fuga maiores quam,
+    repellat tempore! Cupiditate delectus earum exercitationem nostrum perspiciatis possimus,
+    quae quam, quas qui quibusdam quo quod, ullam!</p1>
+
+      <a href="http://localhost:8080"> localhost  </a>
+      <a href="www.code76.lk">76 new</a>
+      <a href="www.code7788.emirage.lk"> 77 new</a>
+      <a href="www.code7733.emirage.lk"> 73 new</a>
+      <a href="www.code7733.emirage.lk"> 73 new</a>
+
+
+      <h1>Hello HTML</h1>
+      <a href="https://whatsapp.com">Ijse</a>
+
+      <ul>
+        <li>A</li>
+        <li>B</li>
+        <li>C</li>
+        <li>D</li>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+      </ul>
+
+    <h1>Our company!</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur atque commodi doloremque eius et id magni, nesciunt nobis non rem rerum ut velit,
+      voluptate voluptatem voluptatum. Architecto facilis harum molestiae!</p>
+
+    <input type="file">
+    <input type="text" placeholder="Enter your Name" >
+
+    <selection>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi, aut blanditiis dolorum ducimus ea eos exercitationem fuga in itaque minima
+        mollitia nemo non nulla, obcaecati quas qui quidem rerum vero.</p>
+    </selection>
+
+    <h1>Sri lanka</h1>
+    <h2>jaffna</h2>
+    <h3>colombo</h3>
+    <h4>galle</h4>
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  //literal Based
+  let x = [];
+  x = [10, 20, 30, 40];
+
+  console.log(x);
+
+
+  // constructor based
+  let y = new Array(10, 20, 30, 40);
+  console.log(y);
+
+  console.log(y[0]);    //10
+  console.log(y[1]);    //20
+  console.log(y[2]);    //30
+  console.log(y[3]);    //40
+  console.log(y[4]);    //undefined
+
+  x= [10,20,30,40,50 , "Sri Lanka", function () {console.log("hi")},
+    ["A","B","C"], true]
+
+  console.log(x[7][1]) //B
+  console.log(x[7][2]) //C
+  console.log(x[7][3]) //undefined
+
+
+  //update array item
+  x[0] = "Uk";
+  console.log(x);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="web, html, css, js, javascript, java, pyphon">
+    <meta name="description" content="World best web development tuorials">
+    <meta name="author" content="Sadee">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Title</title>
+    <link rel="stylesheet" href="/assests/lib/normalize.css">
+
+    <style>
+        section{
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+        div{
+            height: 300px;
+            background-repeat: no-repeat;
+            background-image: url("../assests/OIP.jpg");
+            background-position: bottom center;
+            background-size: cover;
+            border: 3px solid red;
+        }
+
+        @media all  and (max-width: 1300px) {
+          section{
+              grid-template-columns: repeat(3, 1fr);
+          }
+        }
+        @media all  and (max-width: 1000px) {
+            section{
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        @media all  and (max-width: 600px) {
+            section{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+<section>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</section>
+
+</body>
+</html>

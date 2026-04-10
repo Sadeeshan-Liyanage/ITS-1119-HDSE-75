@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+  x="Hello world!"
+  result = x.charAt(7);
+  console.log(result);
+  result = x.charAt(9);
+  console.log(result);
+
+  url = "www.hadddf.com";
+  result= url.startsWith("www");
+  console.log(result);
+
+  //================replace()=================
+  var y = "Hello world";
+  result = y.replace("world","ijse");
+  console.log(result);      //Hello ijse
+
+  y = "A B C D E"
+  result = y.replaceAll(" ",",");
+  console.log(result);     //A,B,C,D,E
+
+  //===================slice()===============
+  x = "Hello world!"
+  result = x.slice(2, 7 );
+  console.log(result);      //llo w
+
+  //===================substring()===============
+  x = "Hello world!"
+  result = x.substring(2, 7 );
+  console.log(result);      //llo w
+
+  //===================split()===============
+  x = "mango,banana,apple,orange";
+  result = x.split(",");
+  console.log(result);      //['mango', 'banana', 'apple', 'orange']
+
+  //===================toLowerCase() & toUpperCase===========
+  var msg ="Hello welcome to sri lanka"
+  result = msg.toLowerCase();
+  console.log(result);        //hello welcome to sri lanka
+
+  result = msg.toUpperCase();
+  console.log(result);        //HELLO WELCOME TO SRI LANKA
+
+  //===================trim()===============
+      x = "       hello welcome        ";
+  result = x.trim();
+  console.log(result);        //hello welcome
+
+</script>
+
+</body>
+</html>

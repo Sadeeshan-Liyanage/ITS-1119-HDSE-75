@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+  <meta charset="UTF-8">
+  <meta name="keywords" content="web, html, css, js, javascript, java, pyphon">
+  <meta name="description" content="World best web development tuorials">
+  <meta name="author" content="Sadee">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Title</title>
+  <link rel="stylesheet" href="/assests/lib/normalize.css">
+
+  <style>
+
+    body{
+      margin: 0;
+      overflow: hidden;
+    }
+
+    main{
+      width:100vw;
+      height:100vh;
+      position:relative;
+    }
+    #div1,#div2,#div3,#div4{
+        width: 50%;
+        height: 50%;
+        position: absolute;
+    }
+
+     #div1{
+        background-color: red;
+        top: 0px;
+        left: 0px;
+    }
+    #div2{
+        background-color: orange;
+        bottom: 0px;
+        left: 0px;
+    }
+    #div3{
+        background-color: green;
+        top: 0px;
+        right: 0px;
+    }
+    #div4{
+        background-color: deeppink;
+        bottom: 0px;
+        right: 0px;
+    }
+    #circle1,#circle2,#circle3,#circle4{
+      position: absolute;
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      border-radius: 100%;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+
+    #square1,#square2,#square3,#square4{
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background-color: red;
+      top: 30%;
+      left: 30%;
+    }
+
+    #corner1,#corner2,#corner3,#corner4{
+      width: 250px;
+      height: 250px;
+      background-color: white;
+      position: absolute;
+      border-radius: 50%;
+
+    }
+    #corner1{
+      top: -125px;
+      left: -125px;
+    }
+    #corner2{
+      bottom: -125px;
+      left: -125px;
+    }
+    #corner3{
+      bottom: -125px;
+      right: -125px;
+    }
+    #corner4{
+      top: -125px;
+      right: -125px;
+    }
+    #center{
+      width: 200px;
+      height: 200px;
+      background-color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    #centerCircle{
+        content: "";
+        width: 120px;
+        height: 120px;
+        background: red;
+        border-radius: 50%;
+        position: absolute;
+    }
+
+
+    #half1,#half2{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: white;
+    }
+    #half1{
+        top: -75px;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+    #half2{
+        bottom: -75px;
+        left: 50%;
+        transform:translateX(-50%);
+    }
+
+
+  </style>
+</head>
+<body>
+<!--    <h1>Hello World</h1>-->
+
+<div id="div1"><div id="circle1"><div id="square1"></div></div></div>
+<div id="div2"><div id="circle2"><div id="square2"></div></div></div>
+<div id="div3"><div id="circle3"><div id="square3"></div></div></div>
+<div id="div4"><div id="circle4"><div id="square4"></div></div></div>
+
+  <div id="corner1"></div>
+  <div id="corner2"></div>
+  <div id="corner3"></div>
+  <div id="corner4"></div>
+
+<div id="half1"></div>
+<div id="half2"></div>
+
+<div id="center">
+  <div id="centerCircle"></div>
+</div>
+
+</body>
+</html>

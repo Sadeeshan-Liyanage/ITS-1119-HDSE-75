@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 id="topic">Course</h1>
+<h2 class="myClass">HTML Course</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque ipsa minima nobis officia quod vitae! A at atque debitis expedita ipsam qui recusandae voluptatibus. In neque sint sunt tempora totam!</p>
+<h2 class="myClass" name="hello">CSS Course</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, aliquam amet animi dicta excepturi id in quaerat quibusdam reiciendis, similique suscipit ut voluptas voluptate? Et expedita facere laborum quis soluta.</p>
+<h2 class="myClass">JS Course</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam consequuntur harum sit. Accusamus adipisci atque commodi consequatur eos expedita harum, minima neque nesciunt, nulla obcaecati, provident quo temporibus voluptatem voluptatibus?</p>
+
+<a href="https://www.apple.com">Apple</a>
+<a href="https://www.google.com">Google</a>
+
+<ol>
+    <li><div>A</div></li>
+    <li><div>B</div></li>
+    <li><div>C</div></li>
+    <li><div>D</div></li>
+</ol>
+
+<ul>
+    <li><div>A</div></li>
+    <li><div>B</div></li>
+    <li><div>C</div></li>
+    <li><div>D</div></li>
+</ul>
+<script>
+    // ============= accessing elements by their IDs ===============
+    // var h1_element = document.getElementById("topic");
+    // h1_element.style.color = "red";
+
+
+    // ============= accessing elements by their tag names (p , h1 , section, main, aside, a) ========================
+    // var h2_elements = document.getElementsByTagName("h2");
+    //
+    // var first_element = h2_elements[0];
+    // var second_element = h2_elements[1];
+    // var third_element = h2_elements[2];
+    // first_element.style.color = "red";
+    // second_element.style.color = "green";
+    // third_element.style.color = "blue";
+
+    // ============= accessing elements by the class name ==================
+    // var myClass_elements = document.getElementsByClassName("myClass");
+    //
+    // var first_element = myClass_elements[0];
+    // var second_element = myClass_elements[1];
+    // var third_element = myClass_elements[2];
+    //
+    // first_element.style.color = "blue";
+    // second_element.style.color = "pink";
+    // third_element.style.color = "yellow";
+
+    // ============= accessing elements by the attributes ==================
+    // var element = document.getElementsByName("hello");
+    // var first_element = element[0];
+    // first_element.styles.backgroundColor = "red";
+
+    // ============= accessing elements by the query selector ==================
+    // document.querySelector("ol > li:first-child > div").style.color = "red" ;  // done without a variable
+
+    // ============= accessing elements by the query selector All ==================
+
+    document.querySelectorAll("li:first-child > div")[0].style.color = "red" ;
+    document.querySelectorAll("li:first-child > div")[1].style.color = "red" ;
+
+</script>
+</body>
+</html>
